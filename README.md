@@ -7,39 +7,32 @@ Anaconda - Python 3.7
 ## ALGORITHM: 
 
 ### Step 1:
-Load the CSV into a DataFrame.
-
+Create a text file with some content in it.
 ### Step 2:
-Print the number of contents to be displayed using df.head().
-
+Open the created text file.
 ### Step 3:
-The number of rows returned is defined in Pandas option settings.
-
+Create another empty text file.
 ### Step 4:
-Check your system's maximum column with the pd.options.display.max_column statement.
-
-### Step 5:
-Increase the maximum number of rows to display the entire DataFrame
-
-### Step 6:
-End the program.
+Copy the content of text file to empty file using write function.
 
 ## PROGRAM:
 ```
-To write a python program for reading content from a CSV file.
-Developed by: ROSHINI S
-Register Number: 212223240142
+#developed by: ROSHINI S
+#register number : 212223240142
 
-import pandas as pd
-df = pd.read_csv('nba.csv')
-print(df.head(10))
-print(df.tail())
-print("Number of rows:",len(df.axes[0]))
-print("Number of columns:",len(df.axes[1]))
+with open("hello.txt",'r') as file1:
+    msg=file1.read()
+with open("program.txt",'w') as file2:
+    file2.write(msg)
 ```
 ### OUTPUT:
 
-![329608372-8863c292-e6b0-4229-997f-80ea3da64c84](https://github.com/Roshini2201/Copy-File/assets/154105318/12e0fe04-5d4a-4a9f-9ebd-f1c5a9469d67)
+![Screenshot 2024-05-11 182907](https://github.com/Roshini2201/Copy-File/assets/154105318/78bc57ec-2933-4f2c-b1d2-1f225520d67d)
+
+![Screenshot 2024-05-11 183732](https://github.com/Roshini2201/Copy-File/assets/154105318/906d9135-4f18-4b88-b504-69325814e0f6)
+
+![Screenshot 2024-05-11 182943](https://github.com/Roshini2201/Copy-File/assets/154105318/d306149e-481b-4818-8650-770ab250ba4b)
+
 
 
 ## RESULT:
