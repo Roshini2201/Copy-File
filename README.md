@@ -5,32 +5,42 @@ To write a python program for copying the contents from one file to another file
 PC
 Anaconda - Python 3.7
 ## ALGORITHM: 
+
 ### Step 1:
-Define a function as copy with arguments existing file, new file name.
+Load the CSV into a DataFrame.
+
 ### Step 2:
-Open a function to read.
+Print the number of contents to be displayed using df.head().
+
 ### Step 3:
-Open a function to write
+The number of rows returned is defined in Pandas option settings.
+
 ### Step 4:
-Copy the contents from existing file to the new file.
+Check your system's maximum column with the pd.options.display.max_column statement.
+
 ### Step 5:
-End the program
+Increase the maximum number of rows to display the entire DataFrame
+
+### Step 6:
+End the program.
 
 ## PROGRAM:
 ```
-#DEVELOPED BY: ROSHINI S
-3REDISTER NUMBER : 212223240142
+To write a python program for reading content from a CSV file.
+Developed by: ROSHINI S
+Register Number: 212223240142
 
-with open ("sys.txt",'r')as fp:
-  msg = fp.read()
-with open("copytxt",'w') as fp1:
-  fp1.write(msg)
+import pandas as pd
+df = pd.read_csv('nba.csv')
+print(df.head(10))
+print(df.tail())
+print("Number of rows:",len(df.axes[0]))
+print("Number of columns:",len(df.axes[1]))
 ```
 ### OUTPUT:
 
-![WhatsApp Image 2024-05-10 at 20 04 32_3f97112a](https://github.com/Roshini2201/Copy-File/assets/154105318/9b80ca25-5619-47c8-9585-631a8200958a)
+![329608372-8863c292-e6b0-4229-997f-80ea3da64c84](https://github.com/Roshini2201/Copy-File/assets/154105318/12e0fe04-5d4a-4a9f-9ebd-f1c5a9469d67)
 
-![WhatsApp Image 2024-05-10 at 20 04 57_6c154077](https://github.com/Roshini2201/Copy-File/assets/154105318/4c58d256-5c20-4488-8f6c-bfb111c2a659)
 
 ## RESULT:
 Thus the program is written to copy the contents from one file to another file.
